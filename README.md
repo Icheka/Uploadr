@@ -27,7 +27,6 @@ Note that the top-most directory in the upload path should be on the same level 
 
 *uploads     ---  books
                       |
-                      
                       --- classics 
                       
                       --- detective
@@ -47,15 +46,14 @@ A similar directory structure that can be used for saving profile pictures in a 
 *user_guide  ---
 
 *uploads     ---  photos
-                      |
-                      
+                      |    
                       --- profile_photos
                       
                       --- stories
                       
                       --- chats 
                       
-*index.php*
+* index.php
 
 ``` $config['upload_path'] = './uploads/photos/profile_photos/'; ```
 
@@ -67,7 +65,9 @@ I recommend performing some type validation at the clientside to filter unwanted
 
 If no $config array is passed to the function, a default of <./uploads/> and <jpg|png|jpeg|svg|txt|wepg|csv|gif> will be used:
 
-``` $this->Uploadr->single_upload('profile_photo') will default to: $this->Uploadr->single_upload('profile_photo', array('upload_path' => './uploads/', 'allowed_types' => 'jpg|png|jpeg|svg|txt|wepg|csv|gif')) ```
+``` $this->Uploadr->single_upload('profile_photo') will default to: |
+
+$this->Uploadr->single_upload('profile_photo', array('upload_path' => './uploads/', 'allowed_types' => 'jpg|png|jpeg|svg|txt|wepg|csv|gif')) ```
 
 #### Below is a list of parameters that may be passed through the <$config> array: 
 
