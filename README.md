@@ -26,7 +26,6 @@ Note that the top-most directory in the upload path should be on the same level 
 *user_guide  ---
 
 *uploads     ---  books
-
                       |
                       
                       --- classics 
@@ -48,7 +47,6 @@ A similar directory structure that can be used for saving profile pictures in a 
 *user_guide  ---
 
 *uploads     ---  photos
-
                       |
                       
                       --- profile_photos
