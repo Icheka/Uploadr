@@ -8,6 +8,7 @@ Easy-to-use codes for serverside handling of file uploads using the CodeIgniter 
 ``` $this->load->model("Uploadr"); ```
 
 The Uploadr library requires two parameters to be passed in most of its methods:
+
 ``` $file: the value of the <name> attribute of the file input form control for the file to be uploaded. In asynchronous uploads (e.g using the Axios library), $file is the name (key) of the file object name:value pair in the FormData API object that will be passed in the request body of the POST request. More information on this is available below.```
 
 ``` $config: an array of configuration options for the file upload handler. The $config array has two required elements: i) $config['upload_path'] ii) $config['allowed_types'] ```
