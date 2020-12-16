@@ -73,21 +73,21 @@ If no $config array is passed to the function, a default of <./uploads/> and <jp
 
 #### Below is a list of parameters that may be passed through the <$config> array: 
 
-+ upload_path   --- <string>   --- the relative path to the upload directory
+``` + upload_path   --- <string>   --- the relative path to the upload directory ```
   
-+ allowed_types --- <string>   --- file types that should be can be uploaded
+``` + allowed_types --- <string>   --- file types that should be can be uploaded ```
   
-+ file_name     --- <string>   --- the name with which the newly uploaded file will be saved
+``` + file_name     --- <string>   --- the name with which the newly uploaded file will be saved ```
   
-+ overwrite     --- <boolean>  --- whether an existing file of the filename should be oerwritten with the new one. If set to <false>, a new file having the same filename as an old one will be renamed and its file name will be appended with an integer, (e.g 'my_file.pdf', 'my_file1.pdf', 'my_file2.pdf')
+``` + overwrite     --- <boolean>  --- whether an existing file of the filename should be oerwritten with the new one. If set to <false>, a new file having the same filename as an old one will be renamed and its file name will be appended with an integer, (e.g 'my_file.pdf', 'my_file1.pdf', 'my_file2.pdf') ```
   
-+ max_size      --- <integer: (bytes)>  --- the ceiling on the size of any file to be uploaded. Files that exceed this value will not be uploaded
+``` + max_size      --- <integer: (bytes)>  --- the ceiling on the size of any file to be uploaded. Files that exceed this value will not be uploaded ```
 
-+ max_width     --- <integer: (pixels)> --- the ceiling on the width of any file to be uploaded
+``` + max_width     --- <integer: (pixels)> --- the ceiling on the width of any file to be uploaded ```
 
-+ max_height    --- <integer: (pixels)> --- the ceiling on the height of any file to be uploaded
+``` + max_height    --- <integer: (pixels)> --- the ceiling on the height of any file to be uploaded ```
 
-+ encrypt_name  --- <boolean>           --- whether to encrypt this file name or not. If set to <false> the file will be saved with either the value of <file_name> if it exists, or the original name of the file as it exists on the local machine
+``` + encrypt_name  --- <boolean>           --- whether to encrypt this file name or not. If set to <false> the file will be saved with either the value of <file_name> if it exists, or the original name of the file as it exists on the local machine ```
 
 ### How to handle single file uploads 
 
