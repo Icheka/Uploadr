@@ -24,4 +24,6 @@ Easy-to-use codes for handling file uploads at the clientside and serverside in 
 ### Extensive documentation for the platform is provided in each branch 
 
 #### Cheers!
-``` Ozuru, Icheka Fortune ```
+``` Ozuru, Icheka Fortune (harry_potter_of_php) ```
+
+``` echo "May the code be with us all" ```
