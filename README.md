@@ -7,7 +7,21 @@ Easy-to-use codes for handling file uploads at the clientside and serverside in 
 ### Some quick examples
 #### CodeIgniter (serverside file upload handling)
 ``` $file = 'profile_photo'; ```
-``` $config = array('upload_path' => './uploads/profile_pictures/', 'allowed_types' => 'jpg|png|jpeg');
-```
+
+``` $config = array('upload_path' => './uploads/profile_pictures/', 'allowed_types' => 'jpg|png|jpeg'); ```
+
 ``` $this->load->model->Uploadr; ```
-``` $this->Uploadr->single_file_upload($filename, $config) ```
+
+``` $status = $this->Uploadr->single_file_upload($filename, $config) ```
+
+``` print_r($status); ```
+
+#### Vue.js
+``` const Uploadr = new Uploadr(); ```
+
+``` Uploadr.do_upload(file, success_callback, error_callback); ```
+
+### Extensive documentation for the platform is provided in each branch 
+
+#### Cheers!
+``` Ozuru, Icheka Fortune ```
