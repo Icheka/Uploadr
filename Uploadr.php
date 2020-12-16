@@ -11,17 +11,17 @@ class Uploadr extends CI_Model {
 	'allowed_types' => 'jpg|png|jpeg|svg|txt|wepg|csv|gif')) {
 		
 		if ((!isset($config['upload_path'])) or (!isset($config['allowed_types'])) {
-			return "Config array must contain <upload_path> and <allowed_types>";
+			$data['status'] = "Config array must contain <upload_path> and <allowed_types>";
+			return $data;
 		}
 	
 		$this->load->library("upload", $config);
 		
-		if ($this->upload->do_upload($file, $confif)) {
+		if ($this->upload->do_upload($file)) {
 			$data = $this->upload->data();
 			$data['status'] = 'Successful';
 		} else {
-		`	$data = $this->upload->display_errors();
-			$data['status'] = 'Failed';
+		`	$data = array("error_message" => $this->upload->display_errors(), "status" => "Failed");
 		}
 		
 		return $data;
