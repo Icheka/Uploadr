@@ -1,7 +1,7 @@
 # Uploadr CodeIgniter Package
 Easy-to-use codes for serverside handling of file uploads using the CodeIgniter PHP framework.
 ## How To Use
-### Copy the Uploadr.php file to your <Models<Models>> folder (within the <application> folder of your CodeIgniter project directory.
+### Copy the Uploadr.php file to your <Models<Models>> folder (within the <<application>a> folder of your CodeIgniter project directory.
   
 ### Load the Uploadr model in your controller:
 
