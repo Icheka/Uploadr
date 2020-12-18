@@ -31,17 +31,26 @@ A quick Google search can help convert your values for you!
 
 ### Upload the file and test for completion:
 
-``` $uploadr->uploadFile('my_file'); 
+``` 
+$uploadr->uploadFile('my_file'); 
+
 // where my_file is the value of the 'name' attribute of the file input element in the HTML form, the name of the file object/blob in the FormData API request object, or the value of the 'file' parameter in any Uploadr clientside SDK 
+
 ```
 
 #### Example file upload successful test script:
 
-``` if ($uploadr->uploadFile('my_file')) {
+``` 
+if ($uploadr->uploadFile('my_file')) {
+
     echo "File uploaded successfully! :>> " . $uploadr->getUploadName();
+    
 } else {
+
     echo "An error occurred and the file could not be uploaded. :>> " . $uploadr->getMessage();
+    
 }
+
 ```
 
 ### The full code could look like this:
