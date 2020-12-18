@@ -1,7 +1,7 @@
 # Uploadr Vanilla PHP Package
 Easy-to-use codes for serverside handling of file uploads using vanilla PHP.
 ## How To Use (7 lines or less)
-### Copy the Uploadr.php file to a suitable folder your projct directory.
+### Copy the Uploadr.php file to a suitable folder within your project directory.
   
 ### Load the Uploadr controller class:
 
