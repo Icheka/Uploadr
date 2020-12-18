@@ -1,25 +1,25 @@
 # Uploadr Vanilla PHP Package
 Easy-to-use codes for serverside handling of file uploads using vanilla PHP.
 ## How To Use (7 lines or less)
-### Copy the Uploadr.php file to a suitable folder your projct directory.
+#### Copy the Uploadr.php file to a suitable folder your projct directory.
   
-### Load the Uploadr controller class:
+#### Load the Uploadr controller class:
 
 ``` require_once("path_to_your_folder/Uploadr.php"); ```
 
-### Next, initialize the Uploadr class: (you don't need to know Object-Oriented PHP)
+#### Next, initialize the Uploadr class: (you don't need to know Object-Oriented PHP)
 
 ``` $uploadr = new Uploadr(); ```
 
-### Point Uploadr to the destination folder for your upload:
+#### Point Uploadr to the destination folder for your upload:
 
 ``` $uploadr->setDir('../uploads/profile_photos/'); ```
 
-### Set allowed extensions for your file. Only files whose file extensions are marked ALLOWED will be uploaded:
+#### Set allowed extensions for your file. Only files whose file extensions are in the array will be uploaded:
 
 ``` $uploadr->setExtensions(array('jpg','jpeg','png','gif')); ```
 
-### Set a ceiling for the size of your file. Files that exceed this ceiling will not be uploaded: (values are in megabytes)
+#### Set a ceiling for the size of your file. Files that exceed this ceiling will not be uploaded: (values are in megabytes)
 
 ``` $uploadr->setMaxSize(15); // sets max_size to 15 megabytes or 15,000,000 bytes ```
 
@@ -29,7 +29,7 @@ You may pass floating point values for smaller units:
 
 A quick Google search can help convert your values for you!
 
-### Upload the file and test for completion:
+#### Upload the file and test for completion:
 
 ``` 
 $uploadr->uploadFile('my_file'); 
@@ -38,7 +38,7 @@ $uploadr->uploadFile('my_file');
 
 ```
 
-#### Example file upload successful test script:
+##### Example file upload successful test script:
 
 ``` 
 if ($uploadr->uploadFile('my_file')) {
@@ -53,7 +53,7 @@ if ($uploadr->uploadFile('my_file')) {
 
 ```
 
-### The full code could look like this:
+#### The full code could look like this:
 
 ``` 
 require_once("../../uploads/profile_photos/");
@@ -73,7 +73,7 @@ if ($uploadr->uploadFile('my_file')) {
 }
 
 ```
-#### Leave a star if you find this helpful.
+##### Leave a star if you find this helpful.
 
 #### Cheers!
 ``` Ozuru, Icheka Fortune (harry_potter_of_php) ```
