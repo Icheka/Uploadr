@@ -77,7 +77,7 @@ If no $config array is passed to the function, a default of <./uploads/<a>> and 
   
 ``` + allowed_types --- <string<a>>   --- file types that should be can be uploaded ```
   
-``` + file_name     --- <string<s>>   --- the name with which the newly uploaded file will be saved ```
+``` + file_name     --- <string<s>>   --- the name with which the newly uploaded file will be saved. Do not include the file type! ```
   
 ``` + overwrite     --- <boolean<a>>  --- whether an existing file of the filename should be oerwritten with the new one. If set to <false<s>>, a new file having the same filename as an old one will be renamed and its file name will be appended with an integer, (e.g 'my_file.pdf', 'my_file1.pdf', 'my_file2.pdf') ```
   
