@@ -116,13 +116,16 @@ The line above would be valid only for PHP 7 and above. It can be written withou
 ``` $data = $this->Uploadr->single_upload('image', $config); ```
 
 ``` 
-if ($data['status'] == 'Success') {
-   print_r($data);
+if ($data['status'] == 'Successful') {
+   echo json_encode($data);
 } elseif ($data['status'] == 'Failed') {
-   echo $data['error_message'];
+   // the upload operation failed due to some reason. The error message will have details.
+   http_response_code(401);
+   echo json_encode($data['error_message']);
 } else {
    // there are problems in the <$config> array 
-   echo $data['status'];
+   http_response_code(404);
+   echo json_encode($data['status']);
 }
 ```
 
